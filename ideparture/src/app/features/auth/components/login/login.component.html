@@ -14,6 +14,10 @@
     <!-- [FORM] -->
     <form [formGroup]="form" (ngSubmit)="onSubmit()" class="w-3/5 mr-12 pr-12 border-r border-neutral-300">
       
+      @if (errorMessage) {
+        <div style="color: #FF0000; font-size: 14px; background: antiquewhite; padding: 5px; margin: 0 0 25px 0;">{{ errorMessage }}</div>
+      }
+
       <!-- Email Input -->
       <div class="mb-4">
         <label class="block text-secondary-500 font-semibold mb-2" for="email">Email</label>

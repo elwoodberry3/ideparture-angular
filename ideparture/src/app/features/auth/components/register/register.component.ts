@@ -26,8 +26,19 @@ export class RegisterComponent {
   onSubmit(): void {
     console.log('register');
     const rawForm = this.form.getRawValue()
-    this.authService.register(rawForm.email, rawForm.username, rawForm.password).subscribe(() => {
-      this.router.navigateByUrl('/')
-    })
+    this.authService
+      .register(rawForm.email, rawForm.username, rawForm.password)
+      .subscribe({
+        next:() => {
+          this.router.navigateByUrl('/')
+        },
+        error: (err) =>{
+          this.errorMessage = err.code
+        }
+      })
+  }
+
+  loginWithGoogle(){
+    console.log("Login With Google")
   }
 }
