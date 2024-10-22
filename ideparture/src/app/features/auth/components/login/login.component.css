@@ -1,0 +1,41 @@
+/* LOGIN.COMPONENT | iDeparture */
+/* Convert the following styles into the iDeparture theme and design system. */
+
+#ideparture-login {
+    background-color: black;
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Ensure content is on top */
+}
+
+#ideparture-login::before {
+    content: ''; /* Necessary for the pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    bottom: 0; /* Stretch to the bottom */
+    background-image: url('../../../../assets/imgs/jpgs/bckgrnd-0001.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    opacity: 0.5; /* Adjust the opacity here */
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+#ideparture-icon {
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Ensure content is on top */ 
+}
+#ideparture-icon::before {
+    color: aliceblue;
+    content: ''; /* Necessary for the pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    bottom: 0; /* Stretch to the bottom */
+    background-image: url('../../../../assets/imgs/svgs/icon_ideparture.svg'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    opacity: 1; /* Adjust the opacity here */
+    z-index: -1; /* Ensure it is behind the content */
+}
