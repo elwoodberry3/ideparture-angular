@@ -1,7 +1,10 @@
 import type { StorybookConfig } from "@storybook/angular";
 
 const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  stories: [
+    "../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    '../src/stories/getting-started.mdx'
+  ],
   addons: [
     "@storybook/addon-onboarding",
     "@storybook/addon-links",
