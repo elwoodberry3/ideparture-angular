@@ -1,4 +1,8 @@
-/** BUTTON [STORY] iDeparture Design System v.3.0.1 */
+/** 
+ * ATOM : BUTTON
+ * iDeparture Design System v.3.0.1 
+ */
+
 import type { Meta, StoryObj } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
 

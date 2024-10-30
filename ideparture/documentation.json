@@ -2,6 +2,51 @@
     "pipes": [],
     "interfaces": [
         {
+            "name": "InputComponentArgs",
+            "id": "interface-InputComponentArgs-a91352039e47eb0c8c092c0d991b5a38c401c203ff195f553320570f4c6379de2dc8a6fff183e32f29a920781fa46865edc8399d601acef6bdac128f3f78fd44",
+            "file": "src/app/assets/interfaces/input-component-args.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface InputComponentArgs {\n    placeholder: string;\n    value: string;\n    disabled: boolean;\n}\n",
+            "properties": [
+                {
+                    "name": "disabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "placeholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
             "name": "User",
             "id": "interface-User-d4821beac0e4a852e513391b7470981c4353fdd95a18628bb68136c8695b489ee15b926e2e5031bc26cf30e1508e0a362c3ee13a06734702b4d15af140e485d5",
             "file": "src/stories/user.ts",
@@ -1238,6 +1283,15 @@
                 "name": "firebaseConfig",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/assets/interfaces/input-component-args.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "InputComponentArgs",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
